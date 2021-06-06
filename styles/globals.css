@@ -1,3 +1,15 @@
+:root {
+	--black: #3B434E;
+	--gray-light: #EBEBEB;
+	--white: white;
+	--primary: #7653FC;
+	--primary-hover: #5A41BD;
+	--background-color: #F5F6F8;
+	--red: #FC836D;
+	--green-light: #C8F8E4;
+	--font-family: 'Noto Sans KR', sans-serif;
+}
+
 html,
 body {
 	margin: 0;
@@ -17,14 +29,4 @@ a {
 
 * {
 	box-sizing: border-box;
-}
-
-:root {
-	--black: #3B434E;
-	--white: white;
-	--primary: #7653FC;
-	--background-color: #F5F6F8;
-	--red: #FC836D;
-	--green-light: #C8F8E4;
-	--font-family: 'Noto Sans KR', sans-serif;
 }
