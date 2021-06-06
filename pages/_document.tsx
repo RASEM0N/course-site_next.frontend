@@ -5,15 +5,15 @@ import Document, {
     Html,
     Main,
     NextScript,
-} from 'next/document';
-import React from 'react';
+} from 'next/document'
+import React from 'react'
 
 // Кастомный documeнт
 // - прокидывание языка lang=ru
 class CustomDocument extends Document {
     static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
-        const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps };
+        const initialProps = await Document.getInitialProps(ctx)
+        return { ...initialProps }
     }
 
     render(): JSX.Element {
@@ -25,8 +25,8 @@ class CustomDocument extends Document {
                     <NextScript />
                 </body>
             </Html>
-        );
+        )
     }
 }
 
-export default CustomDocument;
+export default CustomDocument
