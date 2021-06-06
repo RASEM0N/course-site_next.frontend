@@ -1,6 +1,7 @@
 import { FunctionComponent, useState } from 'react'
 import { Button } from '../components/Button/Button'
 import { Htag } from '../components/Htag/Htag'
+import { Layout } from '../components/layout/Layout'
 import { Rating } from '../components/Rating/Rating'
 
 const Home: FunctionComponent = () => {
@@ -8,7 +9,7 @@ const Home: FunctionComponent = () => {
     const [rating, setRating] = useState<number>(3)
 
     return (
-        <div>
+        <Layout>
             <Htag type="h1">Text</Htag>
             <Button appearance="primary">Кнопка</Button>
             <Button
@@ -19,7 +20,7 @@ const Home: FunctionComponent = () => {
                 Кнопка
             </Button>
             <Rating rating={rating} isEditable setRating={setRating} />
-        </div>
+        </Layout>
     )
 }
 
