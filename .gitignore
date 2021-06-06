@@ -15,6 +15,11 @@
 # production
 /build
 
+# other
+.idea
+yarn.lock
+package-lock.json
+
 # misc
 .DS_Store
 *.pem
